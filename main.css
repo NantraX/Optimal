@@ -1,0 +1,101 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2rem;
+    font-style: oblique;
+    border-radius: 2em;
+    border-color: lightblue;
+    border-style: double;
+}
+
+.panelcentral {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.panel1 {
+    border: 2px solid lightblue;
+    font-size: 200%;
+    text-align: center;
+    border-radius: 2em;
+}
+
+.panel2 {
+    border: 2px solid lightblue;
+    font-size: 125%;
+    border-radius: 2em;
+    font-weight: 500;
+}
+
+.panel3 {
+    border: 2px solid lightblue;
+    font-size: 125%;
+    border-radius: 2em;
+    font-weight: 500;
+}
+
+.boton {
+    font-size: larger;
+    color: white;
+    border-radius: 2em;
+    size: 80px;
+    background-color: lightblue;
+    width: 30%;
+    border-color: transparent;
+}
+
+.boton:hover {
+    border-color: white;
+    box-sizing: border-box;
+}
+
+.panelcentral:focus,
+input:focus,
+input[type]:focus {
+    /* border-color: blue;
+    box-shadow: 0 2px 2px lightseagreen inset, 0 0 4px rgba(255, 144, 0, 0.6);*/
+    outline: 0 none;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: blue;
+    font-size: 20px;
+    text-align: center;
+}
+
+.caja {
+    border-color: aliceblue;
+    text-align: center;
+    font-weight: 500;
+}
+
+.caja:hover {
+    border-color: lightblue;
+}
+
+.cajita:hover {
+    cursor: pointer;
+}
+
+.frases {
+    font-size: 125%;
+    font-weight: 500;
+}
+
+.f1 {
+    color: blue;
+}
+
+.f2 {
+    color: brown;
+}
+
+.f3 {
+    color: green;
+}
+
+.f4 {
+    color: red;
+}

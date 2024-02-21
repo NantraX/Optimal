@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financiación de Productos</title>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3JYSJBZ2E9"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3JYSJBZ2E9');
+</script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="stylesheet" href="main.css">
+
+
+<!-- Angel Luis Ramirez Bernabe   angel@nantrax.com -->
+<!-- Registro de la Propiedad Intelectual. Solicitud: RTA-1374-22 y RTA - 1536-22 
+  
+      Número de Asiento 04/2022/3439  y  04/2022/3658
+      Real Decreto Ley 1/1996 del 12 de Abril
+      
+-->
+
+<body>
+    <div class="grid" id="grilla">
+        <!-- <a href="https://youtu.be/gcch_Wh88q0">Video 1 .- Funcion Elegir Cuota  </a> -->
+        <a href="https://youtu.be/wgsNGPGAFDQ">Video 1 .- Funcion Elegir Cuota y Beneficio Financiera </a>
+        <a href="https://youtu.be/GMhHeUFKwM8">Video 2 .- Funcion Elegir Intereses </a>
+        <div id="activa" class="f1">Código Activación: 123 (Intro)</div>
+
+
+
+        <div class="panel1" id="panel1"> Optimizar Operaciones Financieras
+
+
+        </div>
+
+        <div class="panelcentral" id="panelcentral">
+
+            <div class="panel2" id="panel2">
+                <br>
+
+                <div class="container">
+                    <p>Precio Venta Vehículo: <input type="number" id="cajaprecioVN" class="caja" placeholder="0" size="6"></p>
+
+                    <p>Precio Vehículo que entrega: <input type="number" id="cajaprecioVO" class="caja" placeholder="0" size="6"></p>
+                    <p>Entrega Inicial: <input type="number" id="cajaentrada" class="caja" placeholder="0" size="6"></p>
+                    <p>Descuento Adicional: <input type="number" id="cajadescuento" class="caja" placeholder="0" size="6"></p>
+                    <p>Promoción Financiera: <input type="number" id="cajapromofinan" class="caja" placeholder="0" size="6"></p>
+
+                    <br>
+                    <p>
+                        <input type="checkbox" id="CheckImp" class="cajita" onclick="ImpVerCli()" style="display: none"> Imprimir
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="panel3" id="panel3">
+                <br>
+                <div class="container">
+                    <p>Cantidad a Financiar: <input type="number" id="cajafinanciar" class="caja" placeholder="0" size="9"></p>
+                    <p>% Interés: <input type="text" id="cajainteres" class="caja" value="9.99" size="3"> Meses: <input type="number" class="caja" id="cajameses" value="60" size="2"> </p> <input type="password" id="pword" onchange="VerBoton()" size="4" placeholder="Activar">                    </p>
+                    <p>Referencia Índice Mensual: <input type="number" id="cajaindice" class="caja" value="0.022049" placeholder="0.023130" size="9"></p>
+                    <p id="CoBe" style="display:none">% Comisión Beneficio: <input type="number" id="cajacomision" style="display: none" value="12" class="caja" placeholder="15" size="3"> </p>
+                    <p><input type="checkbox" id="CheckCuota" class="cajita" onclick="EligeCuota()" style="display: none"> Elegir Cuota
+                        <input type="number" id="CajaECuota" placeholder="263.25" style="display: none" size="6">
+                        <input type="checkbox" id="CheckBenFinan" class="cajita" onclick="ElijeBenFinan()" style="display: none"> Elegir Beneficio Financiera
+                        <input type="number" id="CajaBenFinan" placeholder="2452.21" style="display: none" size="6">
+                        <input type="checkbox" id="CheckPInt" class="cajita" onclick="EligeInt()" style="display: none"> Elige Intereses
+                        <input type="number" id="CajaPInt" placeholder="3521" style="display: none" size="6">
+                    </p>
+                    <br>
+
+                    <center><button class="boton" id="botoncalcular" style="display: block"> Calcular </button></center>
+
+
+                </div>
+                <br>
+
+            </div>
+        </div>
+        <div class="frases" id="frases">
+            <div id="cuota" class="f1"></div>
+            <div id="beneficioBruto" style="display: none" class="f2"></div>
+            <div id="beneficioNeto" style="display: none" class="f3"></div>
+            <div id="intereses" class="f4"></div>
+            <div id="cuotaselect" class="f5"></div>
+            <div id="beneficioSelect" class="f6"></div>
+            <div id="PagaInteres" class="f7"></div>
+        </div>
+
+
+
+        <!-- ** FIN DE PROGRAMA **  Software para Gestionar y Optimizar Operaciones Financieras. A través de estos 3 alfgoritmos, el Comercial puede obtener todos los valores y datos necesarios para "luchar" contra cualquier oferta que su entidad bancaria pudiera presentarle. Es un herramienta con muchísimas funciones y posibilidades.
+</body>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+
+        <script src="main.js"></script>
+</body>
+
+
+</body>
+
+</html>
