@@ -7,7 +7,7 @@ function VerBoton(event) {
 
 
     const f_hoy = new Date()
-    const f_limit = new Date(2030, 10, 15)
+    const f_limit = new Date(2999, 10, 15)
 
     const Pass = document.getElementById('pword').value
 
